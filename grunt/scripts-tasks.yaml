@@ -1,0 +1,17 @@
+aliases:
+  - 'jshint:scripts'
+  - 'mochaTest'
+jshint:
+  - 'index.js'
+  - 'lib/**/*.js'
+  - 'test/**/*.js'
+watch:
+  files:
+    - '<%= jshint.scripts %>'
+  tasks:
+    - 'scripts'
+mochaTest:
+  options:
+    reporter: spec
+    clearRequireCache: true
+  src: 'test/*.js'
