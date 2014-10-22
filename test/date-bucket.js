@@ -7,15 +7,18 @@ describe('date bucket', function() {
     assert.deepEqual(buckets, {
       today: {
         total: 260,
-        change: 0.3861003861003861
+        change: 0.3861003861003861,
+        previous: 259
       },
       last7: {
         total: 1799,
-        change: 2.8000000000000003
+        change: 2.8000000000000003,
+        previous: 1750,
       },
       last30: {
         total: 7365,
-        change: 13.921113689095128
+        change: 13.921113689095128,
+        previous: 6465,
       }
     });
   });
@@ -25,15 +28,18 @@ describe('date bucket', function() {
     assert.deepEqual(buckets, {
       today: {
         total: 60,
-        change: 1.694915254237288
+        change: 1.694915254237288,
+        previous: 59
       },
       last7: {
         total: 399,
-        change: 14.000000000000002
+        change: 14.000000000000002,
+        previous: 350
       },
       last30: {
         total: 1365,
-        change: 193.5483870967742
+        change: 193.5483870967742,
+        previous: 465
       }
     });
   });
@@ -43,15 +49,18 @@ describe('date bucket', function() {
     assert.deepEqual(buckets, {
       today: {
         total: 366,
-        change: 0.273972602739726
+        change: 0.273972602739726,
+        previous: 365
       },
       last7: {
         total: 2541,
-        change: 1.9662921348314606
+        change: 1.9662921348314606,
+        previous: 2492
       },
       last30: {
         total: 10545,
-        change: 9.331259720062208
+        change: 9.331259720062208,
+        previous: 9645
       }
     });
   });
@@ -61,15 +70,18 @@ describe('date bucket', function() {
     assert.deepEqual(buckets, {
       today: {
         total: 44,
-        change: 2.3255813953488373
+        change: 2.3255813953488373,
+        previous: 43
       },
       last7: {
         total: 287,
-        change: 20.588235294117645
+        change: 20.588235294117645,
+        previous: 238
       },
       last30: {
         total: 885,
-        change: 5.861244019138756
+        change: 5.861244019138756,
+        previous: 836
       }
     });
   });
