@@ -6,8 +6,11 @@ describe('date bucket', function() {
     var buckets = dateBucket(require('./fixtures/perfect.json'), 260);
     assert.deepEqual(buckets, {
       today: {
-        total: 260,
-        change: 0.3861003861003861
+        total: 260
+      },
+      yesterday: {
+        total: 259,
+        change: 0.3875968992248062
       },
       last7: {
         total: 1799,
@@ -24,8 +27,11 @@ describe('date bucket', function() {
     var buckets = dateBucket(require('./fixtures/startOfYear.json'), 60);
     assert.deepEqual(buckets, {
       today: {
-        total: 60,
-        change: 1.694915254237288
+        total: 60
+      },
+      yesterday: {
+        total: 59,
+        change: 1.7241379310344827
       },
       last7: {
         total: 399,
@@ -42,8 +48,11 @@ describe('date bucket', function() {
     var buckets = dateBucket(require('./fixtures/endOfYear.json'), 366);
     assert.deepEqual(buckets, {
       today: {
-        total: 366,
-        change: 0.273972602739726
+        total: 366
+      },
+      yesterday: {
+        total: 365,
+        change: 0.27472527472527475
       },
       last7: {
         total: 2541,
@@ -60,8 +69,11 @@ describe('date bucket', function() {
     var buckets = dateBucket(require('./fixtures/newYear.json'), 44);
     assert.deepEqual(buckets, {
       today: {
-        total: 44,
-        change: 2.3255813953488373
+        total: 44
+      },
+      yesterday: {
+        total: 43,
+        change: 2.380952380952381
       },
       last7: {
         total: 287,
