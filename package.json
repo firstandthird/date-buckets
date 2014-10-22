@@ -1,6 +1,6 @@
 {
   "name": "date-buckets",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Groups data from last 60 days into buckets",
   "main": "index.js",
   "repository": {
